@@ -3,6 +3,7 @@ build alpha-1 (14.05.18)
 
 
 (Russian)
+
 MathesqueEquationSolver умеет решать уравнения, а также выводить ход решения.
 
 На данный момент, программа умеет:
@@ -13,6 +14,7 @@ MathesqueEquationSolver умеет решать уравнения, а такж�
 
 
 (English)
+
 MathesqueEquationSolver can solve the equations and also display solution progress
 
 At now, MES can:
