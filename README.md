@@ -11,7 +11,7 @@ MathesqueEquationSolver умеет решать уравнения, а такж�
 * Решать линейные уравнения видов (ax + b = 0) и (ax + b = cx + d) с целыми числами 
 ***
 Как использовать программу:
-* Введите нужное уравнение. Члены вида (ax) вводить нужно без знака умножения!
+* Введите нужное уравнение. Ход решения и результат будет виден на экране
 
 
 **(English)**
@@ -23,4 +23,4 @@ At now, MES can:
 * Solve linear equations of the forms (ax + b = 0) and (ax + b = cx + d) with integers 
 ***
 How to use:
-* Enter the equation. A terms (ax) must be written without the multiplication sign!
+* Enter the equation. Solving progress and a result will be displayed
