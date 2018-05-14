@@ -1,5 +1,5 @@
-equat = input(" EquationSolver build alpha-1 \n Введите уравнение (подсказка: умножение числа на переменую писать без знака умножения!)\n")
-
+equat = input(" EquationSolver build alpha-1 \n Введите уравнение: ")
+              
 lit = ''
 err = False
 eqIsThere = False
