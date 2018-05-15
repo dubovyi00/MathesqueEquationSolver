@@ -55,7 +55,8 @@ def equatLinear(equation,var):
             if i.isalpha():
                 if num == 0:
                     if ch == '':
-                        pass
+                        num = 1
+                        litisthere = True
                     elif ch == '+':
                         num = 1
                         litisthere = True
