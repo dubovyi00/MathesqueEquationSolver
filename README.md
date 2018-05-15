@@ -1,5 +1,5 @@
 # MathesqueEquationSolver
-build alpha-1 (14.05.18)
+build alpha-1 (in construction now)
 
 
 **(Russian)**
