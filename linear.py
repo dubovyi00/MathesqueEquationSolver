@@ -1,9 +1,11 @@
-def equatLinear(equation,var):
+def equatLinear(equation, var):
     left = ''
     right = ''
     eqIsThere = False
     litisthere = False
+    floatisthere = False
     err = False
+    y = 1/10
     ch = ''
     for i in equation:
         if i == '=':
@@ -20,102 +22,57 @@ def equatLinear(equation,var):
     elif not err:
         a = 0
         b = 0
-        num = 0
+        num = ''
         litisthere = False
-        ch = ''
         for i in left:
             if i == '+' or i == '-':
-                if num == 0:
-                    ch = i
-                elif num != 0:
+                if num == '':
+                    num += i
+                elif num != '':
                     if litisthere:
-                        a += num
-                        litisthere = False
+                        a += float(num)
                     elif not litisthere:
-                        b += num
-                    ch = i
-                    num = 0
-            if i.isdigit():
-                if i == '0':
-                    if num != 0:
-                        num = num * 10
-                    elif num == 0:
-                        ch = ''
-                elif i != '0':
-                    if num == 0:
-                        if ch == '+' or ch == '':
-                            num = int(i)
-                        elif ch == '-':
-                            num = -1 * int(i)
-                    elif num != 0:
-                        if ch == '+' or ch == '':
-                            num = num * 10 + int(i)
-                        elif ch == '-':
-                            num = num * 10 - int(i)
+                        b += float(num)
+                    num = i
+                    litisthere = False
+            if i.isdigit() or i == '.':
+                num += i
             if i.isalpha():
-                if num == 0:
-                    if ch == '':
-                        num = 1
-                        litisthere = True
-                    elif ch == '+':
-                        num = 1
-                        litisthere = True
-                    elif ch == '-':
-                        num = -1
-                        litisthere = True
-                elif num != 0:
-                    litisthere = True
-        if num != 0:
+                litisthere = True
+                if num == '':
+                    num = '1'
+        if num != '':
             if litisthere:
-                a += num
-                litisthere = False
+                a += float(num)
             elif not litisthere:
-                b += num
-        num = 0
-        ch = ''
-        litisthere = False
+                b += float(num)
+            num = ''
+            litisthere = False
 
         for i in right:
             if i == '+' or i == '-':
-                if num == 0:
-                    ch = i
-                elif num != 0:
+                if num == '':
+                    num += i
+                elif num != '':
                     if litisthere:
-                        a -= num
-                        litisthere = False
+                        a -= float(num)
                     elif not litisthere:
-                        b -= num
-                    ch = i
-                    num = 0
-            if i.isdigit():
-                if i == '0':
-                    if num != 0:
-                        num = num * 10
-                    elif num == 0:
-                        ch = ''
-                elif i != '0':
-                    if num == 0:
-                        if ch == '+' or ch == '':
-                            num = int(i)
-                        elif ch == '-':
-                            num = -1 * int(i)
-                    elif num != 0:
-                        if ch == '+' or ch == '':
-                            num = num * 10 + int(i)
-                        elif ch == '-':
-                            num = num * 10 - int(i)
+                        b -= float(num)
+                    num = i
+                    litisthere = False
+            if i.isdigit() or i == '.':
+                num += i
             if i.isalpha():
-                if num == 0:
-                    num = 1
-                    litisthere = True
-                elif num != 0:
-                    litisthere = True
-        if num != 0:
+                litisthere = True
+                if num == '':
+                    num = '1'
+        if num != '':
             if litisthere:
-                a -= num
-                litisthere = False
+                a -= float(num)
             elif not litisthere:
-                b -= num
+                b -= float(num)
+            num = ''
+            litisthere = False
 
         print('Решение:')
         print('Переносим все члены уравнения в правую часть и складываем подобные члены')

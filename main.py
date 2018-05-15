@@ -32,7 +32,7 @@ if not litIsThere:
     err = True
 
 if not err:
-    equatLinear(equat,lit)
+    equatLinear(equat, lit)
 
 elif err:
     print('Равенство не может быть решено')
