@@ -8,7 +8,7 @@ build alpha-1 (in construction now)
 MathesqueEquationSolver умеет решать уравнения, а также выводить ход решения.
 ***
 На данный момент, программа умеет:
-* Решать линейные уравнения видов (ax + b = 0) и (ax + b = cx + d) с целыми числами 
+* Решать линейные уравнения с рациональными числами 
 ***
 Как использовать программу:
 * Запустите main.py
@@ -21,7 +21,7 @@ MathesqueEquationSolver умеет решать уравнения, а такж�
 MathesqueEquationSolver can solve the equations and also display solution progress 
 ***
 At now, MES can:
-* Solve linear equations of the forms (ax + b = 0) and (ax + b = cx + d) with integers 
+* Solve linear equations with rational numbers
 ***
 How to use:
 * Start main.py
