@@ -8,7 +8,7 @@ build alpha-1 (in construction now)
 MathesqueEquationSolver умеет решать уравнения, а также выводить ход решения.
 ***
 На данный момент, программа умеет:
-* Решать линейные уравнения с рациональными числами 
+* Решать линейные уравнения с рациональными числами от одной переменной
 ***
 Как использовать программу:
 * Запустите main.py
@@ -21,7 +21,7 @@ MathesqueEquationSolver умеет решать уравнения, а такж�
 MathesqueEquationSolver can solve the equations and also display solution progress 
 ***
 At now, MES can:
-* Solve linear equations with rational numbers
+* Solve linear equations of one variable with rational numbers 
 ***
 How to use:
 * Start main.py
